@@ -238,7 +238,7 @@ Create an index pattern via the Kibana API:
 ```console
 $ curl -XPOST -D- 'http://localhost:5601/api/saved_objects/index-pattern' \
     -H 'Content-Type: application/json' \
-    -H 'kbn-version: 7.8.0' \
+    -H 'kbn-version: 7.3.2' \
     -u elastic:<your generated elastic password> \
     -d '{"attributes":{"title":"logstash-*","timeFieldName":"@timestamp"}}'
 ```
